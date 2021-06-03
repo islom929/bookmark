@@ -82,6 +82,10 @@ img {
   margin-right: auto;
 }
 
+.header{
+  padding: 48px 0;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -91,15 +95,10 @@ img {
 .header-logo__link {
 width: 149px;
 margin-right: auto;
-margin-top: 56px;
+
 
 }
 
-.nav {
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-}
 
 .nav__list {
   display: flex;
@@ -167,8 +166,8 @@ color: var(--font-color-red);
 }
 
 .manager{
-  padding-top: 190px;
-  padding-bottom: 190px;
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
 background-position:calc(50% + 600px) center;
@@ -223,6 +222,7 @@ border-color: var(--font-color-blue);
   padding: 10px 24px;
   margin-right: 16px;
   margin-top: 32px;
+  margin-bottom: 100px;
 
 }
 
