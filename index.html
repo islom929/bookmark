@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -78,40 +78,66 @@
 
 <section class="features">
 
-  <div class="container">
-<div class="features-top site-top-section">
-  <h2 class="features-top__title site-top-section__title">
-    Features
-  </h2>
-  <p class="feautes-top__text site-top-section__text">
-    Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
-  </p>
+  <div class="features__box container">
+    <div class="features-top site-top-section">
+      <h2 class="features-top__title site-top-section__title">
+        Features
+      </h2>
+      <p class="feautes-top__text site-top-section__text">
+        Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+      </div>
+  <ul class="nav features__list" id="myTab" role="tablist">
+    <li class="nav-item features__item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab">Simple Bookmarking</a>
+    </li>
+    <li class="nav-item features__item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab">Speedy Searching</a>
+    </li>
+    <li class="nav-item features__item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Easy Sharing</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active bookmark-text ml-auto" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="features-bottom">
+      <h3 class="features-bottom__title">
+        Bookmark in one click
+      </h3>
+    <p class="features-bottom__text">
+      Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+    </p>
+    <a href="#" class="button button--blue button--info">More Info</a>
+    </div>
+    </div>
+    <div class="tab-pane fade speedy" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="features-bottom">
+        <h3 class="features-bottom__title">
+          Intelligent search
+        </h3>
+      <p class="features-bottom__text">
+        Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+      </p>
+      <a href="#" class="button button--blue button--info">More Info</a>
+      </div>
+    </div>
+    <div class="tab-pane fade easy" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="features-bottom">
+        <h3 class="features-bottom__title">
+          Share your bookmarks
+        </h3>
+      <p class="features-bottom__text">
+        Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+      </p>
+      <a href="#" class="button button--blue button--info">More Info</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 
-<ul class="features__list">
-  <li class="features__item features__item--active"><a href="#">Simple Bookmarking</a></li>
-  <li class="features__item"><a href="#">Speedy Searching</a></li>
-  <li class="features__item"><a href="#">Easy Sharing</a></li>
-</ul>
-
-<div class="features-bottom">
-  <h3 class="features-bottom__title">
-    Bookmark in one click
-  </h3>
-<p class="features-bottom__text">
-  Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
-</p>
-<a href="#" class="button button--blue button--info">More Info</a>
 </div>
-
-
-
-
-
-</div>
-
 </section>
 
 
@@ -162,11 +188,7 @@
   </li>
 </ul>
 
-
-
-
 </section>
-
 
 <section class="faq container">
 
@@ -180,90 +202,83 @@
 </div>
 
 <div class="faq-bottom">
-
-<ul class="faq-bottom__list">
-    <li class="faq-bottom__item faq-bottom__item--active">
-        <div class="faq-bottom__item--wrapper">
-            <h3 class="faq-bottom__item--title">What is Bookmark?</h3>
-            <button class="faq-bottom__item--button"></button>
+  <div id="accordion">
+      <div class="p-0" id="headingOne">
+        <h5 class="mb-0">
+          <button class="faq__button btn w-100 border-top  py-3 pl-0 text-left " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is Bookmark?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse faq__text show pt-3" aria-labelledby="headingOne" data-parent="#accordion">
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
         </div>
-        <p class="faq-bottom__item--dropdown">Vivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
-            non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-    </li>
-
-    <li class="faq-bottom__item ">
-        <div class="faq-bottom__item--wrapper">
-            <h3 class="faq-bottom__item--title">How can I request a new browser?</h3>
-            <button class="faq-bottom__item--button"></button>
+      <div class="p-0" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="faq__button btn w-100 border-top py-3 pl-0 text-left collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can I request a new browser?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse faq__text pt-3" aria-labelledby="headingTwo" data-parent="#accordion">
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
         </div>
-        <p class="faq-bottom__item--dropdown">Vivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
-            non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-    </li>
-
-    <li class="faq-bottom__item ">
-        <div class="faq-bottom__item--wrapper">
-            <h3 class="faq-bottom__item--title">Is there a mobile app?</h3>
-            <button class="faq-bottom__item--button"></button>
-        </div>
-        <p class="faq-bottom__item--dropdown">Vivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
-            non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-    </li>
-
-    <li class="faq-bottom__item ">
-        <div class="faq-bottom__item--wrapper">
-            <h3 class="faq-bottom__item--title">What about other Chromium browsers?</h3>
-            <button class="faq-bottom__item--button"></button>
-        </div>
-        <p class="faq-bottom__item--dropdown">Vivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
-            non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
-            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-    </li>
-
-</ul>
+      <div class="p-0" id="headingThree">
+        <h5 class="mb-0">
+          <button class="faq__button btn w-100 border-top py-3 pl-0 text-left collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Is there a mobile app?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse faq__text pt-3" aria-labelledby="headingThree" data-parent="#accordion">
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+    </div>
 
 
-<a href="#" class="button button--blue button--info faq__button">More Info</a>
+      <div class="p-0" id="headingFour">
+        <h5 class="mb-0">
+          <button class="faq__button btn w-100 border-top border-bottom py-3 pl-0 text-left collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            What about other Chromium browsers?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFour" class="collapse faq__text pt-3" aria-labelledby="headingFour" data-parent="#accordion">
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+      </div>
+  </div>
+
+<a href="#" class="button button--blue button--info d-block mx-auto mt-5">More Info</a>
 </div>
-
-
 
 </section>
 
-
-
-
-
-
-
 </main>
 
+<footer class="footer">
 
+  <div class="footer__container container">
+    <a href="#" class="footer__logo-link"><img src="img/logo-bookmark-white.svg" alt="logo of site"></a>
+    <ul class="footer__list">
+      <li class="footer__item"><a href="#" class="footer__link">FEATURES</a></li>
+      <li class="footer__item"><a href="#" class="footer__link">PRICING</a></li>
+      <li class="footer__item"><a href="#" class="footer__link">CONTACT</a></li>
+    </ul>
 
+    <ul class="footer__web-list">
+      <li class="footer__web-item"><a href="#" class="footer__web-link"><img src="img/white-logo-facebook.svg" alt="logo of facebook"></a></li>
+      <li class="footer__web-item"><a href="#" class="footer__web-link"><img src="img/twitter.svg" alt="logo of twitter"></a></li>
+    </ul>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
+</footer>
 
 <script src="js/main.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
